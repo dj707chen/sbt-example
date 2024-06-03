@@ -7,8 +7,8 @@ ThisBuild / scalaVersion := crossScalaVersions.value.head
 
 run := (core / Compile / run).evaluated
 
-lazy val macros = project in file("macros") settings(
+lazy val macros = (project in file("macros")).settings(
  libraryDependencies += "org.scala-lang" % "scala-reflect" % scalaVersion.value
 )
 
-lazy val core = project in file("core") dependsOn macros
+lazy val core = (project in file("core")) dependsOn macros
