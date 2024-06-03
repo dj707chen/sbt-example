@@ -1,6 +1,6 @@
 ### An example SBT project which uses macros (Was created for Scala 2.11, SBT 0.13, updated to Scala 2.13.14, sbt 1.10.0)
 
-To verify that everything works fine, do `sbt runMy`.
+To verify that everything works fine, do `sbt run`.
 
 Note that currently SBT doesn't support recompilation of macro clients if the dependencies of the macro implementation have changed - macro clients are only recompiled when the macro definition itself is:  https://github.com/sbt/sbt/issues/399.
 
